@@ -1,0 +1,247 @@
+body{
+    margin:0;
+    font-size:16px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1b2d4d;
+
+}
+
+
+/** DESKTOP NAVBAR STYLE**/
+#Navbar{
+    width:100%;
+    height:7vh;
+    padding-top: 8px;
+    background-color: #1b2d4d;
+    position:fixed top;
+
+}
+
+#navbox{
+    display:flex;
+    justify-content:center;
+    width:100%;
+    background-color:#1b2d4d;
+}
+
+.navLinks{
+    text-decoration: none;
+    font-size:18px;
+    margin-right:6%;
+    
+}
+
+/** END OF DESKTOP NAV**/
+
+/** START OF MENU NAVBAR FOR MOBILE AND SMALL SCREEN **/
+.ToggleMenu{
+    position:absolute;
+    top:.75rem;
+    right:3rem;
+    padding-bottom:8px;
+    display:none;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #1b2d4d;
+    width:30px;
+    height:23px;
+}
+
+.Bar{
+    height:3px;
+    width:100%;
+    background-color:#FFF;;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/** MEDIA QUERY FOR THE NAVIGATION MENU FOR PHONES AND SMALL SCREENS CAUSES NAV TO SWAP**/
+@media (max-width: 600px) {
+    #navbox{
+        display:none;
+    }
+    
+    .ToggleMenu{
+        display:flex;
+    }
+
+    .ToggleMenu :hover{
+        scale: 1.5;
+        transition: 0.2s ease-in;
+    }
+}
+
+.menucontainer{
+    display:none;
+    flex-direction: column;
+    background-color: #1b2d4d;
+
+}
+
+.menucontainer.active{
+    display:flex;
+}
+
+.navList{
+    list-style:none;
+    background-color:#1b2d4d;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+.listlink{
+    display:flex;
+    justify-content: center;
+    margin-top:5%;
+}
+
+/** END OF MENU BUTTON NAV FOR MOBILE STYLING.**/
+
+a{ 
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    color:white;
+    font-weight:400;
+}
+
+a:hover{
+    text-decoration: underline;
+    text-decoration-color: violet;
+    text-decoration-thickness: 5px;
+    transition: 0.5s ease;
+}
+
+.Paragraphs{
+    display:flex;
+    justify-content:center;
+    text-align:center;
+    padding-left: 10%;
+    padding-right:10%;
+    font-size: 16px;
+    font-weight:400;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Paragraphs:hover{
+    text-decoration: underline solid;
+    text-decoration-color: #fff;;
+}
+
+.H1s{
+    display:flex;
+    padding-left: 10%;
+    padding-right:10%;
+    font-family: 'Poppins', sans-serif;
+    animation:color-animation 4s linear infinite;
+}
+
+#Intro{
+    --color-1: #FFFFFF;
+    --color-2: #884488;
+    --color-3: #32a852;
+
+}
+
+
+#name{
+    padding-left: 15%;
+    padding-right:15%;
+    --color-1: #465856;
+    --color-2: #997761;
+    --color-3: #FFFFFF;
+}
+
+
+#l1{
+    padding-left: 20%;
+    padding-right: 20%;
+    --color-1:  #598234;
+    --color-2:  #2fede1;
+    --color-3:  #e3e31b;
+}
+
+#l2{
+    padding-left: 25%;
+    padding-right: 25%;
+    --color-1:  #444968; 
+    --color-2:  #777794;
+    --color-3: #584550;
+}
+
+#l3{
+    padding-left: 30%;
+    padding-right: 30%;
+    --color-1:  #666999;
+    --color-2:  #cc5312;
+    --color-3: #09e34e;
+}
+
+#l4{
+    padding-left: 35%;
+    padding-right: 35%;
+    --color-1:  #6d8a25;
+    --color-2:  #34815a;
+    --color-3: #e410e8;
+}
+
+#l5{
+    padding-left: 40%;
+    padding-right: 40%;
+    --color-1:  #9e1179;
+    --color-2:  #d5ed5a;
+    --color-3:   #ff1c46;
+}
+
+
+
+
+@keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+  
+
+h2{
+    color:white;
+    padding-inline: 10%;
+
+  }
+
+  .project-btn{
+    color: white;
+    background-color:#1b2d4d;
+    display:flex;
+    justify-content: center;
+    text-align: inline;
+    height: 50px;
+    font-size: 13px;
+    width: 138px;
+    border: none;
+    border-radius: 5px;
+    margin-inline: 41%;
+    cursor:pointer;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  /** This is for the A Tag Nested in Buttons on the Projects Page **/
+  .link{
+    text-decoration: none;
+  }
+
+  .gallery{
+
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100px;
+    max-width: 100px;
+
+  }
+  
